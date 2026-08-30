@@ -25,7 +25,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from AaruxMusic import LOGGER, app, userbot
-from AaruxMusic.core.call import DevSp
+from AaruxMusic.core.call import Aaru
 from AaruxMusic.misc import sudo, system_check
 from AaruxMusic.plugins import ALL_MODULES
 from AaruxMusic.utils.database import get_banned_users, get_gbanned
@@ -57,16 +57,16 @@ async def init():
         importlib.import_module("AaruxMusic.plugins" + all_module)
     LOGGER("AaruxMusic.plugins").info("Successfully Imported Modules...")
     await userbot.start()
-    await DevSp.start()
+    await Aaru.start()
     try:
-        await DevSp.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
+        await Aaru.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
     except NoActiveGroupCall:
         LOGGER("AaruxMusic").warning(
             "Videochat not active in log group. Bot is ready to join group voice chats on command."
         )
     except Exception:
         pass
-    await DevSp.decorators()
+    await Aaru.decorators()
     LOGGER("AaruxMusic").info(
         "AaruxMusic Started Successfully.\n\nDon't forget to visit @AaruxMusic"
     )
@@ -77,7 +77,7 @@ async def init():
     await idle()
     await app.stop()
     await userbot.stop()
-    LOGGER("AaruxMusic").info("Stopping Devloper Sparrow Bot...")
+    LOGGER("AaruxMusic").info("Stopping Devloper AaruxMusic...")
 
 
 if __name__ == "__main__":
