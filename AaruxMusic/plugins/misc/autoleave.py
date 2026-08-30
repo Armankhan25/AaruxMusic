@@ -5,7 +5,7 @@ from pytgcalls.exceptions import GroupCallNotFound
 import config
 from AaruxMusic import app
 from AaruxMusic.misc import db
-from AaruxMusic.core.call import DevSp, autoend, counter
+from AaruxMusic.core.call import Aaru, autoend, counter
 from AaruxMusic.utils.database import get_client, set_loop, is_active_chat, is_autoend, is_autoleave
 import logging
 
@@ -56,7 +56,7 @@ async def auto_end():
             nocall = False
             for chat_id in chatss:
                 try:
-                    users = len(await DevSp.call_listeners(chat_id))
+                    users = len(await Aaru.call_listeners(chat_id))
                 except GroupCallNotFound:
                     users = 1
                     nocall = True
