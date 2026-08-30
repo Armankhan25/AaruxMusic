@@ -6,7 +6,7 @@ from pyrogram.enums import ChatMembersFilter
 from pyrogram.types import CallbackQuery, Message
 
 from AaruxMusic import app
-from AaruxMusic.core.call import DevSp
+from AaruxMusic.core.call import Aaru
 from AaruxMusic.misc import db
 from AaruxMusic.utils.database import get_assistant, get_authuser_names, get_cmode
 from AaruxMusic.utils.decorators import ActualAdminCB, AdminActual, language
@@ -53,7 +53,7 @@ async def restartbot(client, message: Message, _):
     await asyncio.sleep(1)
     try:
         db[message.chat.id] = []
-        await DevSp.stop_stream_force(message.chat.id)
+        await Aaru.stop_stream_force(message.chat.id)
     except:
         pass
     userbot = await get_assistant(message.chat.id)
