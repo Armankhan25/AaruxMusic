@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from AaruxMusic import app
-from AaruxMusic.core.call import DevSp
+from AaruxMusic.core.call import Aaru
 from AaruxMusic.misc import SUDOERS, db
 from AaruxMusic.utils import AdminRightsCheck
 from AaruxMusic.utils.database import is_active_chat, is_nonadmin_chat
@@ -94,7 +94,7 @@ async def del_back_playlist(client, CallbackQuery, _):
         text=_["admin_32"].format(CallbackQuery.from_user.mention),
     )
     try:
-        await DevSp.speedup_stream(
+        await Aaru.speedup_stream(
             chat_id,
             file_path,
             speed,
