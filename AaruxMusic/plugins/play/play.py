@@ -7,7 +7,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from AaruxMusic import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from AaruxMusic.core.call import DevSp
+from AaruxMusic.core.call import Aaru
 from AaruxMusic.utils import seconds_to_min, time_to_seconds
 from AaruxMusic.utils.channelplay import get_channeplayCB
 from AaruxMusic.utils.decorators.language import languageCB
@@ -282,7 +282,7 @@ async def play_commnd(
             return await mystic.delete()
         else:
             try:
-                await DevSp.stream_call(url)
+                await Aaru.stream_call(url)
             except NoActiveGroupCall:
                 await mystic.edit_text(_["black_9"])
                 return await app.send_message(
