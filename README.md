@@ -61,13 +61,22 @@ It supports audio streaming, video playback, queue management, playback controls
 
 ---
 
-# 🎛️ Music Playback Commands
+## 🎵 Playback Commands
 
-## 🎵 `/play`
-
-The `/play` command is used to search for a song and start playing it in the Telegram Voice Chat.
-
-### Usage
-
-```text
-/play <song name>
+| Command | Usage | Description |
+|--------|-------|-------------|
+| `/play` | `/play <song name>` | Play audio in the group voice chat. |
+| `/vplay` | `/vplay <video/song name>` | Play video in the group voice chat. |
+| `/cplay` | `/cplay <song name>` | Play audio in the linked channel voice chat. |
+| `/cvplay` | `/cvplay <video/song name>` | Play video in the linked channel voice chat. |
+| `/pause` | `/pause` | Pause the current playback. |
+| `/resume` | `/resume` | Resume the paused playback. |
+| `/skip` | `/skip` | Skip the current track and play the next track. |
+| `/stop` | `/stop` | Stop playback and clear the queue. |
+| `/end` | `/end` | End the voice chat playback session. |
+| `/queue` | `/queue` | Show the current playback queue. |
+| `/shuffle` | `/shuffle` | Shuffle the current queue. |
+| `/loop` | `/loop` | Enable or disable track looping. |
+| `/seek` | `/seek <seconds>` | Jump to a specific position in the track. |
+| `/speed` | `/speed <0.5-2.0>` | Change playback speed. |
+| `/lyrics` | `/lyrics <song name>` | Search for song lyrics. |
