@@ -4,7 +4,7 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from AaruxMusic import YouTube, app
-from AaruxMusic.core.call import DevSp
+from AaruxMusic.core.call import Aaru
 from AaruxMusic.misc import SUDOERS, db
 from AaruxMusic.utils.database import (
     get_active_chats,
