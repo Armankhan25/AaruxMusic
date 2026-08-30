@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from AaruxMusic import YouTube, app
-from AaruxMusic.core.call import DevSp
+from AaruxMusic.core.call import Aaru
 from AaruxMusic.misc import db
 from AaruxMusic.utils import AdminRightsCheck, seconds_to_min
 from AaruxMusic.utils.inline import close_markup
@@ -56,7 +56,7 @@ async def seek_comm(cli, message: Message, _, chat_id):
     if "index_" in file_path:
         file_path = playing[0]["vidid"]
     try:
-        await DevSp.seek_stream(
+        await Aaru.seek_stream(
             chat_id,
             file_path,
             seconds_to_min(to_seek),
