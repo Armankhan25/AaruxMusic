@@ -160,7 +160,7 @@ async def del_back_playlist(client, CallbackQuery, _):
     elif command == "Skip" or command == "Replay":
         check = db.get(chat_id)
         if command == "Skip":
-            txt = f"➻ sᴛʀᴇᴀᴍ sᴋɪᴩᴩᴇᴅ 🎄\n│ \n└ʙʏ : {mention} 🥀"
+            txt = f"➻ sᴛʀᴇᴀᴍ sᴋɪᴩᴩᴇᴅ 🌷\n│ \n└ʙʏ : {mention} 🍁"
             popped = None
             try:
                 popped = check.pop(0)
@@ -168,7 +168,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     await auto_clean(popped)
                 if not check:
                     await CallbackQuery.edit_message_text(
-                        f"➻ sᴛʀᴇᴀᴍ sᴋɪᴩᴩᴇᴅ 🎄\n│ \n└ʙʏ : {mention} 🥀"
+                        f"➻ sᴛʀᴇᴀᴍ sᴋɪᴩᴩᴇᴅ 🌷\n│ \n└ʙʏ : {mention} 🍁"
                     )
                     await CallbackQuery.message.reply_text(
                         text=_["admin_6"].format(
@@ -177,13 +177,13 @@ async def del_back_playlist(client, CallbackQuery, _):
                         reply_markup=close_markup(_),
                     )
                     try:
-                        return await DevSp.stop_stream(chat_id)
+                        return await Aaru.stop_stream(chat_id)
                     except:
                         return
             except:
                 try:
                     await CallbackQuery.edit_message_text(
-                        f"➻ sᴛʀᴇᴀᴍ sᴋɪᴩᴩᴇᴅ 🎄\n│ \n└ʙʏ : {mention} 🥀"
+                        f"➻ sᴛʀᴇᴀᴍ sᴋɪᴩᴩᴇᴅ 🌷\n│ \n└ʙʏ : {mention} 🍁"
                     )
                     await CallbackQuery.message.reply_text(
                         text=_["admin_6"].format(
@@ -191,11 +191,11 @@ async def del_back_playlist(client, CallbackQuery, _):
                         ),
                         reply_markup=close_markup(_),
                     )
-                    return await DevSp.stop_stream(chat_id)
+                    return await Aaru.stop_stream(chat_id)
                 except:
                     return
         else:
-            txt = f"➻ sᴛʀᴇᴀᴍ ʀᴇ-ᴘʟᴀʏᴇᴅ 🎄\n│ \n└ʙʏ : {mention} 🥀"
+            txt = f"➻ sᴛʀᴇᴀᴍ ʀᴇ-ᴘʟᴀʏᴇᴅ 🌷\n│ \n└ʙʏ : {mention} 🍁"
         await CallbackQuery.answer()
         queued = check[0]["file"]
         title = (check[0]["title"]).title()
@@ -223,7 +223,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             except:
                 image = None
             try:
-                await DevSp.skip_stream(chat_id, link, video=status, image=image)
+                await Aaru.skip_stream(chat_id, link, video=status, image=image)
             except:
                 return await CallbackQuery.message.reply_text(_["call_6"])
             button = stream_markup(_, chat_id)
@@ -259,7 +259,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             except:
                 image = None
             try:
-                await DevSp.skip_stream(chat_id, file_path, video=status, image=image)
+                await Aaru.skip_stream(chat_id, file_path, video=status, image=image)
             except:
                 return await mystic.edit_text(_["call_6"])
             button = stream_markup(_, chat_id)
@@ -280,7 +280,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             await mystic.delete()
         elif "index_" in queued:
             try:
-                await DevSp.skip_stream(chat_id, videoid, video=status)
+                await Aaru.skip_stream(chat_id, videoid, video=status)
             except:
                 return await CallbackQuery.message.reply_text(_["call_6"])
             button = stream_markup(_, chat_id)
