@@ -35,7 +35,7 @@ except ModuleNotFoundError:
 
 import AaruxMusic.core.patch
 
-from AaruxMusic.core.bot import DevSp
+from AaruxMusic.core.bot import Aaru
 from AaruxMusic.core.dir import dirr
 from AaruxMusic.core.git import git
 from AaruxMusic.core.userbot import Userbot
