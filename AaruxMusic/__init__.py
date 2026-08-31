@@ -50,7 +50,7 @@ dbb()
 heroku()
 
 
-app = DevSp()
+app = Aaru()
 userbot = Userbot()
 
 
