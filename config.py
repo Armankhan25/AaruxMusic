@@ -79,11 +79,11 @@ STATS_IMG_URL = "https://carder.top/imagens/1788142576518-34825811.jpg"
 TELEGRAM_AUDIO_URL = "https://carder.top/imagens/1788142853056-270417129.jpg"
 TELEGRAM_VIDEO_URL = "https://carder.top/imagens/1788142853056-270417129.jpg"
 STREAM_IMG_URL = "https://carder.top/imagens/1788142853056-270417129.jpg"
-SOUNCLOUD_IMG_URL = "https://raw.githubusercontent.com/DevloperSP/AaruxMusic/main/.assets/music_forest.jpg"
+SOUNCLOUD_IMG_URL = "https://carder.top/imagens/1788144714701-720038602.jpg"
 YOUTUBE_IMG_URL = "https://carder.top/imagens/1788142853056-270417129.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://raw.githubusercontent.com/DevloperSP/AaruxMusic/main/.assets/music_forest.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://raw.githubusercontent.com/DevloperSP/AaruxMusic/main/.assets/music_forest.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://raw.githubusercontent.com/DevloperSP/AaruxMusic/main/.assets/music_forest.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://carder.top/imagens/1788144714701-720038602.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://carder.top/imagens/1788144714701-720038602.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://carder.top/imagens/1788144714701-720038602.jpg"
 
 
 def time_to_seconds(time):
