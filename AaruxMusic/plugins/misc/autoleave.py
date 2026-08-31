@@ -71,7 +71,7 @@ async def auto_end():
                     except Exception:
                         pass
                     try:
-                        await DevSp.stop_stream(chat_id)
+                        await Aaru.stop_stream(chat_id)
                     except Exception:
                         pass
                     try:
