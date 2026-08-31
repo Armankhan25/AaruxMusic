@@ -18,7 +18,7 @@ API_URL = os.environ.get(
     getattr(
         config,
         "API_URL",
-        "http://yt-api-production-de72.up.railway.app",
+        "yt-api-production-2e61.up.railway.app",
     ),
 )
 
