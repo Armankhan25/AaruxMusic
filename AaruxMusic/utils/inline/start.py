@@ -58,7 +58,7 @@ def private_panel(_):
             InlineKeyboardButton(text=_["S_B_6"], url=config.SUPPORT_CHANNEL,
                                  style=ButtonStyle.PRIMARY,
                                 ),
-            InlineKeyboardButton(text="˹ 𝖲𝗈𝗎𝗋𝖼𝖾𝖢𝗈𝖽𝖾 ˼", url="https://github.com/DevloperSP/AaruxMusic",
+            InlineKeyboardButton(text="˹ 𝖲𝗈𝗎𝗋𝖼𝖾𝖢𝗈𝖽𝖾 ˼", url="land le ",
                                   style=ButtonStyle.DANGER,
                                 ),
         ],
