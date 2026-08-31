@@ -8,7 +8,7 @@ from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 import config
 from AaruxMusic import app
 from AaruxMusic.misc import db
-from AaruxMusic.utils import DevSpBin, get_channeplayCB, seconds_to_min
+from AaruxMusic.utils import AaruBin, get_channeplayCB, seconds_to_min
 from AaruxMusic.utils.database import get_cmode, is_active_chat, is_music_playing
 from AaruxMusic.utils.decorators.language import language, languageCB
 from AaruxMusic.utils.inline import queue_back_markup, queue_markup
