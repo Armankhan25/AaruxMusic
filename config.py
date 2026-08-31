@@ -22,7 +22,7 @@ OWNER_ID = int(getenv("OWNER_ID", "0"))
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
-API_URL = getenv("API_URL", "https://yt-api-production-4ff4.up.railway.app/") #youtube song url
+API_URL = getenv("API_URL", "yt-api-production-2e61.up.railway.app") #youtube song url
 API_KEY = getenv("API_KEY", None) # Get This API KEY FROM OWNER: @SpYtAPIBot
 
 UPSTREAM_REPO = getenv(
