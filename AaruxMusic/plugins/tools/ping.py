@@ -4,7 +4,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from AaruxMusic import app
-from AaruxMusic.core.call import DevSp
+from AaruxMusic.core.call import Aaru
 from AaruxMusic.utils import bot_sys_stats
 from AaruxMusic.utils.decorators.language import language
 from AaruxMusic.utils.inline import supp_markup
