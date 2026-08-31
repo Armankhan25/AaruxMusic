@@ -5,7 +5,7 @@ import config
 from AaruxMusic.logging import LOGGER
 
 
-class DevSp(Client):
+class Aaru(Client):
     def __init__(self):
         LOGGER(__name__).info("Starting Bot...")
         super().__init__(
