@@ -34,8 +34,8 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Mecobots") 
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/Mecobots")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/max_dev_server") 
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/max_dev_server")
 
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
 
@@ -69,18 +69,18 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://raw.githubusercontent.com/DevloperSP/AaruxMusic/main/.assets/sunset_mountain.jpg"
+    "START_IMG_URL", "https://carder.top/imagens/1788142044405-170282420.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://raw.githubusercontent.com/DevloperSP/AaruxMusic/main/.assets/starry_night.jpg"
+    "PING_IMG_URL", "https://carder.top/imagens/1788142044405-170282420.jpg"
 )
-PLAYLIST_IMG_URL = "https://raw.githubusercontent.com/DevloperSP/AaruxMusic/main/.assets/starry_night.jpg"
-STATS_IMG_URL = "https://raw.githubusercontent.com/DevloperSP/AaruxMusic/main/.assets/sunset_mountain.jpg"
-TELEGRAM_AUDIO_URL = "https://raw.githubusercontent.com/DevloperSP/AaruxMusic/main/.assets/morning_sunrise.jpg"
-TELEGRAM_VIDEO_URL = "https://raw.githubusercontent.com/DevloperSP/AaruxMusic/main/.assets/morning_sunrise.jpg"
-STREAM_IMG_URL = "https://raw.githubusercontent.com/DevloperSP/AaruxMusic/main/.assets/morning_sunrise.jpg"
+PLAYLIST_IMG_URL = "https://carder.top/imagens/1788142400893-380628487.jpg"
+STATS_IMG_URL = "https://carder.top/imagens/1788142576518-34825811.jpg"
+TELEGRAM_AUDIO_URL = "https://carder.top/imagens/1788142853056-270417129.jpg"
+TELEGRAM_VIDEO_URL = "https://carder.top/imagens/1788142853056-270417129.jpg"
+STREAM_IMG_URL = "https://carder.top/imagens/1788142853056-270417129.jpg"
 SOUNCLOUD_IMG_URL = "https://raw.githubusercontent.com/DevloperSP/AaruxMusic/main/.assets/music_forest.jpg"
-YOUTUBE_IMG_URL = "https://raw.githubusercontent.com/DevloperSP/AaruxMusic/main/.assets/morning_sunrise.jpg"
+YOUTUBE_IMG_URL = "https://carder.top/imagens/1788142853056-270417129.jpg"
 SPOTIFY_ARTIST_IMG_URL = "https://raw.githubusercontent.com/DevloperSP/AaruxMusic/main/.assets/music_forest.jpg"
 SPOTIFY_ALBUM_IMG_URL = "https://raw.githubusercontent.com/DevloperSP/AaruxMusic/main/.assets/music_forest.jpg"
 SPOTIFY_PLAYLIST_IMG_URL = "https://raw.githubusercontent.com/DevloperSP/AaruxMusic/main/.assets/music_forest.jpg"
