@@ -58,7 +58,7 @@ def private_panel(_):
             InlineKeyboardButton(text=_["S_B_6"], url=config.SUPPORT_CHANNEL,
                                  style=ButtonStyle.PRIMARY,
                                 ),
-            InlineKeyboardButton(text="˹ 𝖲𝗈𝗎𝗋𝖼𝖾𝖢𝗈𝖽𝖾 ˼", url="land le ",
+            InlineKeyboardButton(text="˹ 𝖣𝖾𝗉𝗅𝗈𝗒 ˼", url="https://t.me/max_dev_server/1341",
                                   style=ButtonStyle.DANGER,
                                 ),
         ],
